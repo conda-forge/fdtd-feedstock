@@ -1,11 +1,11 @@
-About fdtd
-==========
+About fdtd-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fdtd-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/flaport/fdtd
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fdtd-feedstock/blob/main/LICENSE.txt)
 
 Summary: a 3D electromagnetic FDTD simulator written in Python
 
