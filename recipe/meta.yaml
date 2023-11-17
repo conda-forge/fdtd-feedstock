@@ -1,5 +1,5 @@
 {% set name = "fdtd" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 38c3e1dba7c1a33cf54bcc20a48ac4a1d94074a1ea0047eba9ec3c5f7a405a0d
+  sha256: 1eb209b14c73410f5c62215afb16f615cf15d89f5c3228ba902808cd7cc4182d
 
 build:
   number: 0
