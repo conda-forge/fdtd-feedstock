@@ -7,20 +7,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 714694f4faa1206f2252fe41a4d67aa076ce32ba2ae458bb23e59c756b28e9cf
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - matplotlib-base
     - numpy
     - scipy
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://github.com/flaport/fdtd
